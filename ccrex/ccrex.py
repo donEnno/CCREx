@@ -1,10 +1,10 @@
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import numpy as np
 from keras.models import load_model                                         # type: ignore
 
-from utils import one_hot_encoder, get_kmers, geometric_mean
-
+from .utils.utils import one_hot_encoder, get_kmers, geometric_mean
 
 class CCREx:
 
@@ -17,7 +17,6 @@ class CCREx:
         # Build CCREx
         self.models = self._setup_models()
 
-
     def _setup_models(self):
         models_basepath = '/home/enno/uni/SS24/CCREx_dev/models/simple_models/AVILM_R5_M1/'  # 'ccrex/models/'
         models = os.listdir(models_basepath)
@@ -26,15 +25,7 @@ class CCREx:
 
         return models
 
-
     def predict(self, sequence):
-        """
-        Predict on a given sequence and plot the predictions.
-
-        Parameters:
-            sequence (str): Protein sequence to predict on.
-        """
-
         result = {'hen': [], 'hep': []}
 
         seq = sequence.upper()
@@ -46,7 +37,6 @@ class CCREx:
         hep_predictions = []
 
         for model in self.models:
-        
             preds = model.predict(kmers, verbose=0)
             temp_hen_predictions = []
             temp_hep_predictions = []

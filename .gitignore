@@ -10,4 +10,9 @@ ccrex_plots/
 ccrex.egg-info/
 dist/
 build/
+tests/
 *.egg-info/
+
+*.json
+results.json
+setup.py
