@@ -10,3 +10,10 @@ You can install the module using pip:
 
 ```bash
 pip install ccrex
+```
+
+## Usage
+```bash
+ccrex -i path/to/fasta [-o /output/directory/ ] [-p/--plot True/False]
+```
+
