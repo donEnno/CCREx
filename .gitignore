@@ -5,3 +5,9 @@ __pycache__/
 .venv
 .idea/
 .vscode/
+
+ccrex_plots/
+ccrex.egg-info/
+dist/
+build/
+*.egg-info/
