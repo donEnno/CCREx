@@ -1,5 +1,7 @@
 
-!(https://github.com/donEnno/CCREx/ccrex.png)
+
+
+![](https://github.com/donEnno/CCREx/blob/main/ccrex.png?raw=true)
 
 CCREx is a module for predicting on protein sequences using CCREx models.
 
