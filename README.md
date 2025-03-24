@@ -13,10 +13,10 @@ Currently it requires ```python=3.9```
 You can install the module using pip:
 
 ```bash
-pip install ccrex
+Won't happen :(
 ```
 
-## Usage
+## Theoretical Usage
 ```bash
 ccrex -i path/to/fasta [-o /output/directory/ ] [-p/--plot True/False]
 ```
